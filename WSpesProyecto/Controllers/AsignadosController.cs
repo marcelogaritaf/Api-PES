@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using WSpesProyecto.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace WSpesProyecto.Controllers
 {
+    [EnableCors("Cors law")]
     [Route("api/[controller]")]
     [ApiController]
     public class AsignadosController : ControllerBase

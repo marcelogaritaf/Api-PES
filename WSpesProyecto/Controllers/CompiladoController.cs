@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,7 @@ using WSpesProyecto.Models;
 
 namespace WSpesProyecto.Controllers
 {
+    [EnableCors("Cors law")]
     [Route("api/[controller]")]
     [ApiController]
     public class CompiladoController : ControllerBase
